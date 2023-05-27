@@ -5,6 +5,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def listar_materias(request):
+def vista_inicial(request):
     materias=Materia.objects.all()
-    return render(request,'unsa/listado_materias.html',{'materias':materias})
+    return render(request,'unsa/inicio.html',{'materias':materias})

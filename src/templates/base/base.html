@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,13 +10,13 @@
   <body>
     <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Logo</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'inicio:vista_inicio' %}">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Unsa</a>
+          <a class="nav-link" href=" {% url 'unsa:vista_inicial' %}">Unsa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Argentina Programa</a>
+          <a class="nav-link" href="{% url 'argentina_programa:vista_inicial' %}">Argentina Programa</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Quien Soy</a>
